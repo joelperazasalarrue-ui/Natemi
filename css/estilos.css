@@ -484,6 +484,52 @@ a {
   font-size: 0.72rem;
 }
 
+/* ---------- REDES SOCIALES ---------- */
+
+.redes {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.redes a {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid rgba(87, 37, 47, 0.25);
+  color: var(--vino);
+  transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.redes svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* Instagram está dibujado con líneas, no relleno */
+.redes .icono-linea {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+}
+
+.redes .icono-linea .punto {
+  fill: currentColor;
+  stroke: none;
+}
+
+.redes a:hover,
+.redes a:focus-visible {
+  background: var(--vino);
+  color: var(--blanco);
+  transform: translateY(-3px);
+}
+
 /* ==============================
    BOTÓN FLOTANTE DE WHATSAPP
    Usa el logo oficial en SVG (ver HTML)
