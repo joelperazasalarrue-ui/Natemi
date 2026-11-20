@@ -80,14 +80,15 @@ a {
 }
 
 .logo {
-  color: var(--vino);
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: -2px;
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
 }
 
-.logo span {
-  color: var(--rosa);
+/* El logo es una imagen: se limita por altura y el ancho se ajusta solo */
+.logo img {
+  width: auto;
+  height: 46px;
 }
 
 .nav {
@@ -515,6 +516,11 @@ a {
   display: inline-block;
 }
 
+.logo-footer img {
+  height: 50px;
+  margin: 0 auto;
+}
+
 .footer > p {
   margin: 5px 0 18px;
   color: #806d71;
@@ -677,6 +683,14 @@ a {
 @media (max-width: 650px) {
   [id] {
     scroll-margin-top: 0;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
+  .logo-footer img {
+    height: 44px;
   }
 
   .header {
