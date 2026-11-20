@@ -28,6 +28,11 @@ html {
   scroll-behavior: smooth;
 }
 
+/* El header es fijo: deja espacio para que no tape los títulos al navegar */
+[id] {
+  scroll-margin-top: 82px;
+}
+
 body {
   background: var(--marfil);
   color: var(--texto);
@@ -622,6 +627,10 @@ a {
 }
 
 @media (max-width: 650px) {
+  [id] {
+    scroll-margin-top: 0;
+  }
+
   .header {
     position: relative;
     flex-direction: column;
