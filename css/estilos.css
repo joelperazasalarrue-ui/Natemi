@@ -455,6 +455,54 @@ a {
   font-size: 0.87rem;
 }
 
+/* ---------- VIDEO DE INSTAGRAM ---------- */
+
+.video {
+  background: var(--rosa-claro);
+}
+
+.video-contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 65px;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.video-texto h2 {
+  color: var(--vino);
+  font-family: var(--titulo);
+  font-size: clamp(2.2rem, 4vw, 3.3rem);
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.video-texto h2 em {
+  color: #bd7c8c;
+  font-weight: 400;
+}
+
+.video-texto > p:not(.etiqueta) {
+  max-width: 440px;
+  margin: 20px 0 28px;
+  color: #78666a;
+  font-size: 0.95rem;
+}
+
+.video-embed {
+  display: flex;
+  justify-content: center;
+}
+
+/* Ajusta el video de Instagram al diseño */
+.video-embed .instagram-media {
+  width: 100% !important;
+  max-width: 400px !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+}
+
 /* ---------- FOOTER ---------- */
 
 .footer {
